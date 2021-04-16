@@ -48,12 +48,12 @@
           <span>{{ row.email }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="团队" align="center" min-width="160px">
-        <template slot-scope="{row}">
-          <span v-if="row.team" class="link-type" @click="handleTeam(row.team)">{{ row.team.name }}</span>
-          <span v-else>无团队</span>
-        </template>
-      </el-table-column>
+<!--      <el-table-column label="团队" align="center" min-width="160px">-->
+<!--        <template slot-scope="{row}">-->
+<!--          <span v-if="row.team" class="link-type" @click="handleTeam(row.team)">{{ row.team.name }}</span>-->
+<!--          <span v-else>无团队</span>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
       <el-table-column label="性别" min-width="100px" align="center">
         <template slot-scope="{row}">
           <el-tag :type="row.gender | genderTagFilter">
@@ -68,13 +68,13 @@
           </el-tag>
         </template>
       </el-table-column>
-      <el-table-column label="微信登录" min-width="100px" align="center">
-        <template slot-scope="{row}">
-          <el-tag :type="row.openId != null && row.openId.length === 0 ? 'info' : 'success'">
-            {{ row.openId != null && row.openId.length === 0 ? '未开通' : '已开通' }}
-          </el-tag>
-        </template>
-      </el-table-column>
+<!--      <el-table-column label="微信登录" min-width="100px" align="center">-->
+<!--        <template slot-scope="{row}">-->
+<!--          <el-tag :type="row.openId != null && row.openId.length === 0 ? 'info' : 'success'">-->
+<!--            {{ row.openId != null && row.openId.length === 0 ? '未开通' : '已开通' }}-->
+<!--          </el-tag>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
       <el-table-column label="注册时间" min-width="160px" align="center">
         <template slot-scope="{row}">
           <span>{{ row.createdAt }}</span>

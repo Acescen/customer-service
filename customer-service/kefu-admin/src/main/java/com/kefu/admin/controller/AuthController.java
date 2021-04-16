@@ -18,8 +18,6 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * 授权相关接口，不需要验证权限就能访问
  *
- * @author feng
- * @date 2019-05-19
  */
 @Slf4j
 @RestController
